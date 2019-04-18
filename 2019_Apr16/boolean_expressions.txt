@@ -1,0 +1,22 @@
+a == b
+a < b
+a > b
+a <= b
+a >= b
+
+a != b 
+a <> b   # only in python2
+
+a is b
+a is not b
+
+element in collection
+"with" in "this is a test string with some words"
+10 in (33, 44, 10, 44, 33, 44)
+
+not in
+
+not
+and
+or
+

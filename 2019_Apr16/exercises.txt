@@ -1,0 +1,5 @@
+1. Scanning processes that consume memory beyond a threshold on Linux
+
+2. Calculating total memory usage of all running processes in a one-liner
+
+3. Identifying all files that exceed a specified size limit in a directory structure

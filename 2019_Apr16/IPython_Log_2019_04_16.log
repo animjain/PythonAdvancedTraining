@@ -1,0 +1,68 @@
+
+"sdfsdf werwer ewd sfsdfds fds fdsfsd".split()
+"sdfsdf werwer ewd sfsdfds fds fdsfsd".split(2)
+get_ipython().set_next_input('"sdfsdf werwer ewd sfsdfds fds fdsfsd".split');get_ipython().run_line_magic('pinfo', 'split')
+a = "sdsdf"
+get_ipython().run_line_magic('pinfo', 'a.split')
+"sdfsdf werwer ewd sfsdfds fds fdsfsd".split(maxsplit=2)
+from collections import namedtuple
+Record = namedtuple("ProcessInfo", headers)
+Record = namedtuple("ProcessInfo", ["RSS", "PID", "ARGS"])
+r = Record(43434, 45454, "ddsfdsfsdf")
+r
+a = [334, 3434, "dsfdslfjdslfjsdlf"]
+Record(a)
+Record(*a)
+import contextlib
+dir(contextlib)
+contextlib.contextmanager
+get_ipython().run_line_magic('pinfo', 'contextlib.contextmanager')
+a = "aaa bbb ccc dddd eee fff"
+a.split()
+a.split(maxsplit=2)
+class Car: pass
+Car
+c = Car()
+c
+type(c)
+c.__class__
+Car
+type(Car)
+t = type(Car)
+t
+type(t)
+a = 10
+a = int(10)
+a
+a.__class__
+type(a)
+int
+type(int)
+isinstance(a, type)
+dir(a)
+int()
+a()
+get_ipython().run_line_magic('pwd', '')
+get_ipython().run_line_magic('cd', 'design_patterns/')
+from role_facade import User
+u = User()
+dir(u)
+u.login("john", "welcome")
+dir(u)
+u.login("john", "welcome")
+dir(u)
+u.logout()
+dir(u)
+u.logout()
+dir(u)
+u.login("root", "root123")
+dir(u)
+u.add("john", "welcome")
+u.remove("smith")
+u.logout()
+u
+dir(u)
+u.login("testuser", "root123")
+u.add("sddsf", "werwr")
+u.logout()
+u.login("dsdf", "werwer")

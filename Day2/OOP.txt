@@ -1,0 +1,7 @@
+Is-A        Inheritance : Generalization / Used for strict typing
+Has-A       Composition : Re-usability
+Uses-A      Abstraction & Encapsulation : Contract/Protocol for objects to interact
+===================================================================================
+
+
+Classes in python are also objects and belongs to "Metaclass".

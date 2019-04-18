@@ -1,0 +1,119 @@
+
+
+from square_test import square
+square
+from square_test import square
+square(2)
+square(3.4)
+help(square)
+square(4+5j)
+
+a: int = 10
+a = 3.5
+
+from company_oo import Company
+dir(Company)
+c1 = Company()
+dir(c1)
+c.staff
+c1.hire("John")
+
+from company_oo import Company
+c1 = Company()
+c1.hire("John")
+c1.hire("Smith")
+c1.hire("Adrian")
+c1.show()
+c2 = Company()
+c2.show()
+c2.hire("Jones")
+c2.show()
+c1.fire("Adrian")
+c1.show()
+c2.hire("Adrian")
+c2.show()
+from company_oo_simple import Company as NewCompany
+c3 = NewCompany()
+dir(NewCompany)
+c3
+dir(c3)
+c.hire("sam")
+c3.hire("sam")
+c3.hire("jim")
+c3.show()
+c3.staff
+c4 = NewCompany()
+c1
+c2
+id(c1.hire)
+id(c2.hire)
+id(c3.hire)
+id(c4.hire)
+
+from company_oo_simple import Company
+c = Company()
+c.hire("smith")
+c.show()
+c.staff
+c.__staff
+c._Company__staff
+dir(c)
+Company.show(c)
+Company.show()
+c.show()
+
+from context_management_test import SillyLogger
+s = SillyLogger("s.log")
+with s:
+    print("In with block: s.log.closed =", s.log.closed)
+    s.log("this is a test message...")
+    print("Exiting with block...")
+    
+from context_management_test import SillyLogger
+s = SillyLogger("s.log")
+with s:
+    print("In with block: s.log.closed =", s.log.closed)
+    s.log("this is a test message...")
+    print("Exiting with block...")
+    
+with s:
+    print("In with block: s.log.closed =", s.logfile.closed)
+    s.log("this is a test message...")
+    print("Exiting with block...")
+    
+with s:
+    print("In with block: s.log.closed =", s.logfile.closed)
+    s.log("this is a test message...")
+    3 / 0
+    print("Exiting with block...")
+    
+s.logfile.closed
+with SillyLogger("s.log") as s:
+    print("In with block...")
+    s.log("this is a new message...")
+    print("finishing...")
+    
+from context_management_test import SillyLogger
+with SillyLogger("s.log") as s:
+    print("In with block...")
+    s.log("this is a new message...")
+    print("finishing...")
+    
+from context_management_test import SillyLogger
+with SillyLogger("s.log") as s:
+    print("In with block...")
+    s.log("this is a new message...")
+    print("finishing...")
+    
+get_ipython().run_line_magic('cat', 's.log')
+get_ipython().run_line_magic('pwd', '')
+get_ipython().run_line_magic('cd', '../2019_Mar06')
+get_ipython().run_line_magic('clear', '')
+get_ipython().run_line_magic('pwd', '')
+get_ipython().run_line_magic('ls', '')
+from sieve1 import gen_primes
+for n in gen_primes():
+    print(n)
+    
+import itertools
+get_ipython().run_line_magic('pinfo', 'itertools.islice')

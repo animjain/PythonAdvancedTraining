@@ -1,0 +1,17 @@
+Exercise 1
+----------
+
+On MacOS/Linux, you can run the command 'ps -aeo pid,rss,args' on the Terminal
+to gather Process-id, Resident Set Size (physical RAM usage) and the actual
+command with arguments running on your system.
+
+Write a Python program that periodically runs the above command and scans for
+process(es) that exceed memory usage beyond a threshold value passed as command
+line argument.
+
+Example usage:
+==============
+$ ./scan_proc_mem.py 10000000
+4563 is using 23244556 bytes
+7682 is using 43344567 bytes
+

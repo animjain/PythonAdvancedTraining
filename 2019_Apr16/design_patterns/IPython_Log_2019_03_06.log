@@ -1,0 +1,45 @@
+
+from role_facade import User
+User
+u = User()
+dir(u)
+u.login("john", "john123")
+dir(u)
+u.login("john", "john123")
+dir(u)
+u.logout()
+dir(u)
+u.logout()
+u.login("root", "welcome")
+dir(u)
+u.add("sam", "sam123")
+u.remove("sam")
+u.logout()
+dir(u)
+u.add("dsdf", "sdfdsf")
+u
+dir(u)
+u.name = "sdfdsf"
+dir(u)
+u.name = "root"
+dir(u)
+del u.name
+dir(u)
+from adapter import *
+a = Adapter(Fan)
+a = Appliance(Fan)
+b = Appliance(LightBulb)
+a
+b
+Fan
+LightBulb
+Appliance
+a
+b
+a.power_on()
+a.poweron()
+b.poweron()
+a.poweroff()
+b.poweroff()
+a
+b

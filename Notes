@@ -1,0 +1,61 @@
+Things to Read:
+===============
+
+1> from collections import deque
+            >> used to import list/stack etc
+
+
+
+
+2> from itertools import zip_longest, zip
+            >> provides wrapper pythonic implementations of various python collections
+    =====================================
+    a = [10, 20, 30, 40]
+    b = [50, 60, 70, 80]
+    # for v in a + b:
+
+    Correct Implementation:
+        from itertools import chain
+        for v in chain(a, b):
+            print(v)
+    =====================================
+
+    r1.headers
+    r2.headers
+    for k, v in r1.headers.items():
+        print(k, v)
+
+    for k, v in r2.headers.items():
+        print(k, v)
+
+    Correct Implementation:
+        from collections import ChainMap
+        for k, v in ChainMap(r1.headers, r2.headers).items():
+            print(k, v)
+
+        c = dict(ChainMap(a, b))
+    =====================================
+
+
+
+3>  from collections import defaultdict
+
+    count = defaultdict(int)
+    for w in s.split():
+        count[w] += 1
+
+
+    Similarly:
+        >>> from collections import defaultdict
+        >>> d = defaultdict(list)
+        >>> d["a"].append(10)
+        >>> d["b"].append(20)
+        >>> d["c"].append(30)
+        >>> d["a"].append(100)
+        >>> d["a"].append(200)
+        >>> d
+        defaultdict(<class 'list'>, {'a': [10, 100, 200], 'b': [20], 'c': [30]})
+        >>>
+
+
+4>

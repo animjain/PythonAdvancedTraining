@@ -1,0 +1,6 @@
+{
+    "Circle": {"radius": 4},
+    "Square": {"length": 10},
+    "Rectangle": {"length": 15, "breadth": 20}
+}
+

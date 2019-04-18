@@ -1,0 +1,6 @@
+Download the exercise file from the following URL:
+   http://tinyurl.com/count-words-ex
+
+Implement the count_words() function that prints the
+number of occurrence of each word in a string.
+

@@ -1,0 +1,20 @@
+c = a + b   # c = a.__add__(b)
+c = a - b   # c = a.__sub__(b)
+c = a * b   # c = a.__mul__(b)
+c = a / b   # c = a.__truediv__(b)
+c = a % b   # c = a.__divmod__(b)
+c = a // b  # c = a.__floordiv__(b)
+c = a ** b  # c = a.__pow__(b)
+
+c = -a      # c = a.__neg__()
+
+c = a | b   # c = a.__or__(b)
+c = a & b   # c = a.__and__(b)
+c = a ^ b   # c = a.__xor__(b)
+c = ~a       
+
+c = a << 1  # c = a.__lshift__(1) 
+c = a >> 1  # c = a.__rshift__(1)
+
+
+

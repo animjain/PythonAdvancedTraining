@@ -1,0 +1,147 @@
+1. Boolean comparison operators
+-------------------------------
+    ==
+    != <>
+    <
+    >
+    <=
+    >=
+
+    is
+    is not
+
+    in
+    not in
+
+
+    Examples
+    --------
+        >>> a = 10
+        >>> b = 10
+        >>> a == b
+        True
+        >>>
+        
+        >>> c = 20
+        >>> a > c
+        False
+        >>> a < c
+        True
+        >>> a != c
+        True
+
+
+
+
+
+
+
+
+
+
+
+2. Logical evaluation operators
+-------------------------------
+    and
+    or
+    not
+
+    Examples
+    --------
+    >>> a = 10
+    >>> b = 20
+    >>> c = 30
+    >>> b > a and b < c
+    True
+    >>> a == 10 or b == 100
+    True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. Special boolean operators
+----------------------------
+    is
+    is not
+
+        Example
+        -------
+        >>> a = "Hello world"
+        >>> b = "Hello world"
+        >>> c = a
+        >>> a is b
+        False
+        >>> a is c
+        True
+        >>> a is not b
+        True
+
+
+    in
+    not in
+
+        Example
+        -------
+        >>> a = 33, 44, 55, 32, 12, 56, 77
+        >>> 44 in a
+        True
+        >>> 100 not in a
+        True
+        >>> 67 in a
+        False
+
+4. Boolean context
+------------------
+false_values = False, None, 0, 0.0, "", (), [], {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

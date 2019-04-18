@@ -1,0 +1,1065 @@
+
+get_ipython().run_line_magic('load', 'http://tinyurl.com/findall-ex')
+# %load http://tinyurl.com/findall-ex
+"""
+Implement the findall() function below that should return
+a list of indices all occurrence of a substring found in
+a string (both passed as arguments to the function).
+
+Example usage:
+--------------
+   >>> quote = '''
+   ... When I see a bird
+   ... that walks like a duck
+   ... and swims like a duck
+   ... and quacks like a duck,
+   ... I call that bird a duck
+   ... '''
+
+   >>> findall(quote, "duck")
+   [37, 59, 82, 107]
+
+"""
+
+def findall(main_string, sub_string):
+    """
+    Returns a list of indices of each occurrence of
+    sub_string in main_string
+
+    Example usage:
+    --------------
+        >>> poem = '''
+        ... A fly and flea flew into a flue,
+        ... said the fly to the flea 'what shall we do ?'
+        ... 'let us fly' said the flea
+        ... and said the fly 'let us flee'
+        ... and so they flew through a flaw in the the flue.
+        ... '''
+
+        >>> findall(poem, 'fly')
+        [3, 43, 88, 120]
+
+    """
+    indices = []
+    pass # TODO: Implement the logic here!
+    return indices
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+    # Running this program using 'python3 findall.py' should
+    # ideally pass all tests in the doctest - on implementation
+    # of findall() function
+
+a = "this is a test test is a test string"
+a
+a
+a.find("test")
+get_ipython().run_line_magic('pinfo', 'a.find')
+a.find("test", 14)
+a.find("test", 19)
+a.find("test", 23)
+a.find("test", 29)
+"test" in a
+b = 55, 66, 33, 44, 66, 77, 88, 99
+44 in b
+b.index(44)
+b.find(44)
+a
+a.index("test")
+a.find("test")
+a.find("temp")
+a.index("temp")
+# %load http://tinyurl.com/findall-ex
+"""
+Implement the findall() function below that should return
+a list of indices all occurrence of a substring found in
+a string (both passed as arguments to the function).
+
+Example usage:
+--------------
+   >>> quote = '''
+   ... When I see a bird
+   ... that walks like a duck
+   ... and swims like a duck
+   ... and quacks like a duck,
+   ... I call that bird a duck
+   ... '''
+
+   >>> findall(quote, "duck")
+   [37, 59, 82, 107]
+
+"""
+
+def findall(main_string, sub_string):
+    """
+    Returns a list of indices of each occurrence of
+    sub_string in main_string
+
+    Example usage:
+    --------------
+        >>> poem = '''
+        ... A fly and flea flew into a flue,
+        ... said the fly to the flea 'what shall we do ?'
+        ... 'let us fly' said the flea
+        ... and said the fly 'let us flee'
+        ... and so they flew through a flaw in the the flue.
+        ... '''
+
+        >>> findall(poem, 'fly')
+        [3, 43, 88, 120]
+
+    """
+    indices = []
+    i = 0
+    while True:
+        i = main_string.find(sub_string, i)
+        if i == -1:
+            break
+        indices.append(i)
+        i += len(sub_string)
+
+    return indices
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+    # Running this program using 'python3 findall.py' should
+    # ideally pass all tests in the doctest - on implementation
+    # of findall() function
+
+a
+findall(a, "test")
+# %load http://tinyurl.com/findall-ex
+"""
+Implement the findall() function below that should return
+a list of indices all occurrence of a substring found in
+a string (both passed as arguments to the function).
+
+Example usage:
+--------------
+   >>> quote = '''
+   ... When I see a bird
+   ... that walks like a duck
+   ... and swims like a duck
+   ... and quacks like a duck,
+   ... I call that bird a duck
+   ... '''
+
+   >>> findall(quote, "duck")
+   [37, 59, 82, 107]
+
+"""
+
+def findall(main_string, sub_string):
+    """
+    Returns a list of indices of each occurrence of
+    sub_string in main_string
+
+    Example usage:
+    --------------
+        >>> poem = '''
+        ... A fly and flea flew into a flue,
+        ... said the fly to the flea 'what shall we do ?'
+        ... 'let us fly' said the flea
+        ... and said the fly 'let us flee'
+        ... and so they flew through a flaw in the the flue.
+        ... '''
+
+        >>> findall(poem, 'fly')
+        [3, 43, 88, 120]
+
+    """
+    indices = []
+    indexOfString = 0
+    while True:
+        i = main_string.find(sub_string, i)
+        if i == -1:
+            break
+        indices.append(i)
+        i += len(sub_string)
+
+    return indices
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+    # Running this program using 'python3 findall.py' should
+    # ideally pass all tests in the doctest - on implementation
+    # of findall() function
+
+for i in range(5):
+    print("Hello")
+
+for _ in range(5):
+    print("Hello")
+
+# %load http://tinyurl.com/findall-ex
+"""
+Implement the findall() function below that should return
+a list of indices all occurrence of a substring found in
+a string (both passed as arguments to the function).
+
+Example usage:
+--------------
+   >>> quote = '''
+   ... When I see a bird
+   ... that walks like a duck
+   ... and swims like a duck
+   ... and quacks like a duck,
+   ... I call that bird a duck
+   ... '''
+
+   >>> findall(quote, "duck")
+   [37, 59, 82, 107]
+
+"""
+
+def findall(main_string, sub_string):
+    """
+    Returns a list of indices of each occurrence of
+    sub_string in main_string
+
+    Example usage:
+    --------------
+        >>> poem = '''
+        ... A fly and flea flew into a flue,
+        ... said the fly to the flea 'what shall we do ?'
+        ... 'let us fly' said the flea
+        ... and said the fly 'let us flee'
+        ... and so they flew through a flaw in the the flue.
+        ... '''
+
+        >>> findall(poem, 'fly')
+        [3, 43, 88, 120]
+
+    """
+    indices = []
+    i = 0
+    while True:
+        i = main_string.find(sub_string, i)
+        if i == -1:
+            break
+        indices.append(i)
+        i += len(sub_string)
+
+    return indices
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+    # Running this program using 'python3 findall.py' should
+    # ideally pass all tests in the doctest - on implementation
+    # of findall() function
+
+a = "Hello world"
+b = "Hello world"
+c = a
+a
+b
+c
+a
+b
+c
+a == b
+a == c
+a is b
+a is c
+id(a)
+id(b)
+id(c)
+def square(data):
+    data[0] *= data[0]
+
+a = [10, 20, 30]
+a
+square(a)
+a
+a = 10
+id(a)
+dir(a)
+a = True
+a == 1
+a == 1
+False == 0
+name = "John"
+a = 100
+class User: pass
+u = User()
+u.name = "Smith"
+u
+a = ["Hello", 34]
+a
+a[0]
+a = ("Hello", 34)
+a[0]
+def square(x):
+    return x*x
+
+square(2)
+a = square
+a(2)
+def foo():
+    def bar():
+        print("This is bar function...")
+    bar()
+    bar()
+
+foo()
+bar()
+def foo():
+    def bar():
+        print("This is bar function...")
+    return bar
+
+foo()
+b = foo()
+b()
+a = [10, 20, 30, 40, 50, 60]
+a
+def square(x): return x*x
+square(2)
+square(a)
+def apply(fn, d):
+    result = []
+    for v in d:
+        result.append(fn(v))
+    return result
+
+a
+apply(square, a)
+map(square, a)
+for r in map(square, a): print(r)
+class User: pass
+User
+Admin = User
+Admin
+User
+a = Admin
+a = Admin()
+a
+a = Admin
+a
+id(a)
+def foo():
+    class User:
+        pass
+    return User
+
+Admin = foo()
+Admin
+import time
+time
+time.ctime()
+import time
+time.ctime()
+from time import ctime
+ctime()
+def testfn(name, role, place):
+    value = 100
+    testdata = "Hello world"
+    for i in range(10):
+        print("Counting", i)
+        print(value*i)
+
+testfn
+id(testfn)
+type(testfn)
+dir(testfn)
+testfn.__qualname__
+a = testfn
+print(testfn)
+print(a)
+testfn.__qualname__ = "hello"
+print(a)
+print(testfn)
+testfn.__code__
+testfn.__code__
+testfn.__code__.co_varnames
+testfn.__code__.co_code
+import inspect
+import dis
+dis.disassemble(testfn.__code__)
+len
+len.__code_
+len.__code__
+testfn
+type(testfn)
+type(len)
+import time
+time
+len("sdfsdf")
+len.__qualname__
+len.__qualname__ = "length"
+dir(len)
+testfn.__code__
+User()
+User
+u = User()
+u
+u.name = "Adrian"
+u.role = "Developer"
+u.place = "Noida"
+u.name
+u.role
+u.place
+u.name
+u.__dict__
+u.name
+u.__dict__.get("name")
+User.country = "India"
+User.country
+u.country
+u.country
+u.__dict__.get("country", u.__class__.__dict__.get("country"))
+u.country
+u.__dict__
+User.__dict__
+u.__class__
+u.__dict__
+User.__dict__
+a = [10, 20, 30]
+b = a[0]
+b
+b = a.__getitem__(0)
+b
+a[0] = 100
+a
+a[0] = 100
+a.__setitem__(0, 100)
+a = 10
+b = 20
+c = a + b
+c = a.__add__(b)
+c = int.__add__(a, b)
+c
+def square(x):
+    return x*x
+
+square(2)
+square.__call__(2)
+a = 100
+a(20)
+dir(a)
+get_ipython().run_line_magic('load', '1')
+# %load 1
+get_ipython().run_line_magic('load', 'http://tinyurl.com/findall-ex')
+a = [3, "hello", 56, 7.8, 4+5j, "22"]
+a
+def square(x): return x*x
+r = []
+for v in a:
+    result = square(v)
+    r.append(result)
+
+for v in a:
+    try:
+        result = square(v)
+    except:
+        print(v, "cannot be squared...")
+    else:
+        r.append(result)
+
+
+r
+len("sdfsdfdsf")
+len([10, 20, 30, 40])
+len({55, 66, 77, 88})
+len({"aaa": "bbb"})
+len(100)
+a = "hello"
+b = 10, 20, 30
+c = [10, 20, 30]
+d = {55, 66, 77, 88}
+e = {"aaa": 444}
+len(a)
+a.__len__()
+len(b)
+None
+bool
+int
+float
+complex
+numerics
+str
+a = 'Hello'
+a
+type(a)
+a = "Hello"
+type(a)
+a = f"{len('100')}"
+type(a)
+str
+bytes
+a = b"Hello world"
+a
+a
+b = b"Hello world"
+a = "Hello world"
+a
+b
+get_ipython().run_line_magic('ls', 'a.txt')
+get_ipython().run_line_magic('ls', '')
+f = open("foo.py")
+f
+get_ipython().run_line_magic('ls', '~/Documents/')
+f1 = open("/Users/chandrashekar/Documents/zone_memory_map.png")
+f1
+f1.read()
+f1.read()
+f.read()
+f1 = open("/Users/chandrashekar/Documents/zone_memory_map.png", "rb")
+f1.read()
+f1 = open("/Users/chandrashekar/Documents/zone_memory_map.png", "rb")
+a = f1.read()
+type(a)
+a
+a = "\u0904"
+print(a)
+a = "\u0905"
+print(a)
+a
+a = "\u0905\u0904\u0906"
+len(a)
+for c in a: print(c)
+b = b"\u0905\u0904\u0906"
+print(b)
+a = b"Hello world"
+a
+a[0]
+a[0] = 65
+b = bytearray(a)
+b
+b[0] = 65
+b
+a = "this is a test string"
+b = "this is a test string"
+id(a)
+id(b)
+a == b
+hash(a) == hash(b)
+hash(a)
+hash(b)
+a = 10, 20, 30
+b = [10, 20, 30]
+a
+b
+c = 10, 20, 30
+d = [10, 20, 30]
+a
+c
+b
+d
+get_ipython().run_line_magic('timeit', 'a == c')
+get_ipython().run_line_magic('timeit', 'b == d')
+a = tuple(range(100000))
+a
+len(a)
+c = tuple(range(100000))
+a
+c
+get_ipython().run_line_magic('timeit', 'a == c')
+a
+hash(a)
+hash(b)
+hash(c)
+a = "hello"
+a
+b = "hello"
+a
+b
+get_ipython().run_line_magic('timeit', 'a == b')
+a *= 100
+a
+b *= 100
+b
+get_ipython().run_line_magic('timeit', 'a == b')
+a = "Hello world"
+b = [10, 20, 30, 40, 50, 60]
+a
+b
+a[0]
+b[0]
+a[:4]
+b[:4]
+c = {111, 22, 3, 44, 55, 66, 77, 88, 99}
+c
+c[0
+]
+c[0]
+for v in c: print(v)
+c
+len(c)
+c.add(10)
+c
+c.add(11)
+c
+c.add(12)
+c
+import requests
+requests.get("http://www.adobe.com/")
+r1 = requests.get("http://www.adobe.com/")
+r2 = requests.get("http://www.facebook.com/")
+r1.headers
+r1.headers["Content-Type"]
+r2.headers["Content-Type"]
+r1.headers.keys()
+r1.headers.keys() - r1.headers.keys()
+r1.headers.keys() - r2.headers.keys()
+r2.headers.keys() - r1.headers.keys()
+r2.headers.keys() & r1.headers.keys()
+r2.headers & r1.headers
+r2.headers.items() & r1.headers.items()
+a = list(range(10000))
+a
+9999 in a
+get_ipython().run_line_magic('timeit', '9999 in a')
+get_ipython().run_line_magic('timeit', '9999 in a')
+a = list(range(100000)
+)
+get_ipython().run_line_magic('timeit', '99999 in a')
+a = set(range(10000))
+get_ipython().run_line_magic('timeit', '9999 in a')
+a = set(range(1000000))
+get_ipython().run_line_magic('timeit', '999999 in a')
+s1
+s = {10, 20, 30, 40}
+s
+s.add("hello")
+s
+s.add((40, 50, 60))
+s
+s.add([10, 20, 30])
+s.add(frozenset([10, 20, 30]))
+s
+hash(100)
+hash(1000)
+hash(1000000000000)
+hash(10000000000000000000)
+hash(776627963145224196)
+a = [10, 20, 30, 40, 50, 60]
+a
+tuple(a)
+"_".join(str(x) for x in a)
+a = 10, 20, 30
+b, c, d = a
+a, b = 10, 20
+def testfn(a, b, c):
+    print(a, b, c)
+
+testfn(10, 20, 30)
+a = [10, 20, 30, 40, 50]
+a.append(60)
+a
+a.pop()
+a
+a.insert(0, 100)
+a
+quque
+queue
+from collections import deque
+a = deque([10, 20, 30, 40])
+a
+a.append(50
+)
+a
+a.pop()
+a.appendleft(100)
+a
+a.popleft()
+a
+a
+a.rotate()
+a
+users = "john", "adrian", "smith", "joe", "jane"
+users
+for u in users:
+    print(u)
+
+for i in range(len(users)):
+    print(i, users[i])
+
+for i, u in enumerate(users):
+    print(i, u)
+
+places = "mumbai", "delhi", "kolkatta", "chennai"
+users
+places
+zip(users, places)
+for u, p in zip(users, places): print(u, p)
+from itertools import zip_longest as zip
+for u, p in zip(users, places): print(u, p)
+a = [10, 20, 30, 40]
+b = [50, 60, 70, 80]
+a
+b
+for v in a + b:
+    print(v)
+
+from itertools import chain
+for v in chain(a, b):
+    print(v)
+
+chain(a, b)
+r1
+r1.headers
+r2.headers
+r1.headers
+for k, v in r1.headers.items():
+    print(k, v)
+
+for k, v in r2.headers.items():
+    print(k, v)
+
+from collections import ChainMap
+for k, v in ChainMap(r1.headers, r2.headers).items():
+    print(k, v)
+
+i = 0
+while True:
+    print(i)
+    i += 1
+
+from itertools import count
+for v in count():
+    print(v)
+
+a
+a
+from itertools import cycle
+for v in cycle(a):
+    print(v)
+
+for v in repeat(10):
+    print(v)
+
+from itertools import *
+for v in repeat(10):
+    print(v)
+
+for v in repeat("y"):
+    print(v)
+
+
+permutations
+import strings
+import string
+string.printable
+string.printable * 8
+p = string.printable * 8
+p
+for password in permutations(p, 8):
+    print("".join(password))
+
+
+    print("".join(password))
+
+import itertools
+dir(itertools)
+def square(x): return x*x
+square(2)
+square
+sqr = lambda x: x*x
+sqr(2)
+sqr
+a = [10, 20, 30, 40, 50, 60]
+a
+map(square, a)
+list(map(square, a))
+list(map(square, a))
+list(map(lambda x: x*x*x, a))
+[ x*x*x for x in a ]
+def add(x, y):
+    return x + y
+
+a
+from functools import partial
+addfn = partial(add, 50)
+addfn
+addfn(10)
+addfn(20)
+addfn(30)
+list(map(addfn, a))
+list(map(partial(lambda x, y: x + y, 50), a))
+[ 50 + x for x in a]
+a
+a = 33, 4, 67, 87, 12, 16, 18, 92, 18, 32, 33, 36, 89
+a
+list(filter(lambda x: x % 3 == 0, a))
+[ x for x in a if x % 3 == 0 ]
+list(map(lambda x: x*x, filter(lambda x: x % 3 == 0, a)))
+[ x*x for x in a if x % 3 == 0 ]
+a = 2
+a
+a ** 2
+import math
+math.sqrt(a)
+math.pow(a, 2)
+a ** 0.5
+a = {"aaa": 100, "bbb": 200}
+b = {"ccc": 300, "ddd": 400}
+c = a + b
+c = {}.update(a).update(b)
+c = {}
+c.update(A)
+c.update(a)
+c.update(b)
+c
+c
+del c
+a
+b
+c = dict(a.items() | b.items())
+c
+c = dict(**a, **b)
+c
+def testfn():
+    print("Called testfn...")
+
+testfn()
+testfn(10)
+def testfn():
+    print("calling testfn with no args...")
+
+def testfn(a):
+    print("called testfn with a =", a)
+
+testfn(10)
+testfn()
+def testfn(a=None):
+    if a is None:
+        print("testfn() called with no args...")
+    else:
+        print("testfn() called with a =", a)
+
+testfn()
+testfn(10)
+def testfn(*a):
+    print("a =", a)
+
+testfn()
+testfn(10, 20, 30, 40, 50)
+def testfn(**a):
+    print("a =", a)
+
+testfn()
+testfn(10, 20, 30)
+testfn(a=10, b=20, c=345)
+def testfn(a, b, c):
+    print(f"a = {a}, b = {b}, c = {c}")
+
+testfn(10, 20, 30)
+testfn(10, 20)
+testfn(10, 20, 30, 40)
+def testfn(a, b, c):
+    print(f"a = {a}, b = {b}, c = {c}")
+
+data = 10, 20, 30
+data
+testfn(data)
+testfn(*data)
+data = {"a": 100, "c": 200, "b": 50}
+data
+testfn(**data)
+data = [10, 22, 33, 44, 55, 66, 77]
+None, 0, 0.0, 0000
+None, 0, 0.0, 00001
+a = 001
+None, 0, 0.0, "", (), [], {}, set(), False
+data
+while data:
+    print(data.pop())
+
+data
+data = [10, 22, 33, 44, 55, 66, 77]
+data = [10, 22, -33, 44, 55, 66, 77]
+while data:
+    v = data.pop()
+    if v < 0:
+        break
+
+data
+done = True
+data = [10, 22, -33, 44, 55, 66, 77]
+while data:
+    v = data.pop()
+    if v < 0
+while data:
+    v = data.pop()
+    if v < 0:
+        done = False
+        break
+
+if not done:
+    print("Incomplete...")
+
+data = [10, 22, -33, 44, 55, 66, 77]
+while data:
+    v = data.pop()
+    if v < 0:
+        print("Incomplete...")
+        break
+else:
+    print("Complete...")
+
+data = [10, 22, 33, 44, 55, 66, 77]
+while data:
+    v = data.pop()
+    if v < 0:
+        print("Incomplete...")
+        break
+else:
+    print("Complete...")
+
+def testfn(a, b, c, d):
+    print(a, b, c, d)
+
+d1 = dict(a=10, b=20)
+d2 = dict(c=30, d=40)
+d1
+d2
+testfn(**d1, **d2)
+dict(**d1)
+dict(**d1, **d2)
+c = dict(**d1, **d2)
+from collections from ChainMap
+from collections import ChainMap
+c = dict(ChainMap(a, b))
+c
+c = dict(**d1, **d2)
+d2
+c
+d2
+d2["b"] = 40
+d1
+d2
+c = dict(**d1, **d2)
+c = dict(ChainMap(d1,d2))
+c
+c = dict(d1.items() | d2.items())
+c
+import collections
+collections.deque
+collections.ChainMap
+collections.Counter
+a = "this is a test string with test test is a test string"
+a
+a.split()
+Counter(a.split())
+from collections import Counter
+Counter(a.split())
+c = Counter(a.split())
+for k, v in c.items(): print(c)
+for k, v in c.items(): print(k, v)
+c
+c.most_common()
+c.most_common()[0]
+get_ipython().run_line_magic('pinfo', 'c.most_common')
+c.most_common()[0]
+c.most_common(4)
+c.most_common(2)
+c.most_common()
+c.most_common()[0]
+c.most_common(0)
+c.most_common(1)
+def count_elements(s):
+    pass # TODO
+
+def count_words(s):
+    pass # TODO
+
+count_words("this is a test test is a test is a test string")
+def count_words(s):
+    count = {}
+    for w in s.split():
+        count[w] = count.get(w, 0) + 1
+    print(count)
+
+
+count_words("this is a test test is a test is a test string")
+d1
+d1
+d1["a"]
+d1["c"]
+d1.get("a")
+d1.get("c")
+d1.get("c", 100)
+from collections import defaultdict
+d = defaultdict(int)
+d
+int()
+str()
+list()
+d["a"]
+d
+d["b"] = 100
+d["b"]
+d["c"]
+d
+def count_words_default_dict(s):
+    count = defaultdict(int)
+    for w in s.split():
+        count[w] += 1
+
+def count_words_default_dict(s):
+    count = defaultdict(int)
+    for w in s.split():
+        count[w] += 1
+    print(count)
+
+count_words_default_dict("this is a test test is a test is a test string")
+d = defaultdict(list)
+d["a"].append(10)
+d["b"].append(20)
+d["c"].append(30)
+d["a"].append(100)
+d["a"].append(200)
+d
+users = "john", "smith", "jane" "adrian", "bourne", "jim", "steve", "james", "sarah" ,"mary"
+users
+users
+d = defaultdict(int)
+d = defaultdict(list)
+for u in users:
+    d[len(u)].append(u)
+
+d
+dir(collections)
+import abc
+dir(abc)
+dir(abc.ABC)
+dir(abc)
+dir(abc.ABCMeta)
+from collections import abc
+dir(abc)
+results = (True, 45, 67)
+results
+Results = namedtuple("complete", "passed", "failed")
+from collections import namedtuple
+Results = namedtuple("complete", "passed", "failed")
+Results = namedtuple("Results", "complete", "passed", "failed")
+Results = namedtuple("Results", ("complete", "passed", "failed"))
+results = (True, 45, 67)
+results = Results(True, 45, 67)
+results
+results[0]
+results.complete
+results.passed
+import sys
+sys.version
+sys.version_info
+sys.version_info[0]
+sys.version_info[1]
+sys.version_info.major == 3 and sys.version_info.minor > 6
+from time import localtime
+localtime()
+localtime().tm_year
+localtime().tm_mon
+localtime()[0]
+localtime()[1]
+def store_data(db, host, username, record):
+    print(f"Storing {record} to {db} on {host} as {username}")
+
+store_data("mydb", "localhost", "root", "blah blah")
+store_data(db="mydb", host="localhost", username="root", record="blah blah")
+store_data(db="mydb", host="localhost", username="root", record="blah blah")
